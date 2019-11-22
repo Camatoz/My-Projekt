@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../fon2.jpg);
+    background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    text-decoration: none;
+    color: rgb(76, 105, 75);
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 2vw;
+    grid-auto-flow: dense;
+}
