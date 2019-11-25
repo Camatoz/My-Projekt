@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cousine&effect=fire");
 
 /* cyrillic */
-@font-face {
+/* @font-face {
   font-family: "Cousine";
   font-style: normal;
   font-weight: 400;
@@ -14,12 +15,14 @@
 .font-effect-destruction {
   -webkit-mask-image: url(//themes.googleusercontent.com/static/patterns/destruction.png);
   color: rgb(221, 25, 25);
-}
+} */
+
+/* https://fonts.googleapis.com/css?family=Cousine&effect=destruction */
 
 body {
   margin: 0;
   padding: 0;
-  background: url(../fon2.jpg);
+  background-image: url(../fon2.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -39,6 +42,12 @@ a {
   color: rgb(76, 105, 75);
 }
 
+.letter {
+  text-align: center;
+  display: block;
+  width: 100px;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -48,14 +57,19 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+  align-items: center;
   grid-gap: 2vw;
   grid-auto-flow: dense;
 }
 
 #top {
   position: fixed;
-  right: 430px;
+  right: 18%;
   bottom: 30px;
   font-size: 30px;
   color: darkred;
+}
+
+.visited {
+  color: crimson;
 }
