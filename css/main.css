@@ -35,7 +35,7 @@ a {
   margin: 0 auto;
 }
 
-.letters {
+.letters,.container-num  {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
