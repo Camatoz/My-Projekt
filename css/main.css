@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cousine&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 
 body {
   margin: 0;
@@ -9,10 +10,18 @@ body {
   background-repeat: no-repeat;
 }
 
-h1 {
+h1,h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Cousine", monospace;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.container-num > a {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
