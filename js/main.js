@@ -33,6 +33,7 @@ window.onload = function() {
   renderLetters(numbers, numberContainer, "audio/numbers");
 };
 
+/////////////////////////////////////////////////
 function renderLetters(list, container, folder) {
   for (let i = 0; i < list.length; i++) {
     // КОСТЫЛЬ
@@ -49,8 +50,8 @@ function renderLetters(list, container, folder) {
     container.appendChild(letter); // добавляем его в страницу
 
     // АЛЬТ ВАРИАНТ МЕДЛЕННЫЙ
-    // let letter = '<a href="#" class="letter" id="letter' + i + '">' + alphabet[i] + '</a>';
-    // letterContainer.innerHTML += letter;
+    // let letter = '<a href="#" class="letter" id="letter' + i + '">' + list[i] + '</a>';
+    // container.innerHTML += letter;
 
     // ДОБ ТЕГ АУДИО
     let audio = document.createElement("audio");

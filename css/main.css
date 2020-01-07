@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cousine&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
 
 body {
   margin: 0;
@@ -10,18 +10,15 @@ body {
   background-repeat: no-repeat;
 }
 
-h1,h2 {
+h2 {
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-  font-size: 2em;
+  font: 3em "Open Sans", sans-serif;
+  margin: 50px 0 30px;
 }
 
 .container-num > a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -37,6 +34,12 @@ a {
   text-align: center;
   display: block;
   width: 100px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.letter:hover {
+  border-color: crimson;
 }
 
 .container {
@@ -44,19 +47,26 @@ a {
   margin: 0 auto;
 }
 
-.letters,.container-num  {
+.letters,
+.container-num {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   grid-gap: 2vw;
+  margin-bottom: 100px;
+}
+
+.container-num .letter {
+  margin-bottom: 25px;
 }
 
 #top {
   position: fixed;
-  right: 18%;
+  right: 8%;
   bottom: 30px;
   font-size: 30px;
-  color: darkred;
+  color: crimson;
+  cursor: pointer;
 }
 
 .visited {
